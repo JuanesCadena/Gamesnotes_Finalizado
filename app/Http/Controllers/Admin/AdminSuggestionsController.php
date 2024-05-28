@@ -21,6 +21,7 @@ class AdminSuggestionsController extends Controller
             if ($search) {
                 $query->where('name', 'like', '%' . $search . '%');
             }
+                    $query->orderBy('created_at', 'desc');
 
             // Obtener todas las sugerencias sin paginación
             $suggestions = $query->get();
