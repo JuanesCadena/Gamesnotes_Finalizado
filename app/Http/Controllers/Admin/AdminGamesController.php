@@ -188,7 +188,7 @@ class AdminGamesController extends Controller
             $videoGame->genres = json_decode($videoGame->genres);
 
             $platform = ['steam', 'nintendo_switch', 'playstation_5', 'xbox_series']; // Ejemplo, reemplaza esto con tus propias plataformas obtenidas de la base de datos
-            $genres = ['RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash', 'Estrategia', 'Tactico','Online', "Beat'Em Up",  'Aventura Grafica', 'MOBA','Simulación', 'Puzzle', 'Idle', 'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox', 'Plataformas', 'MMO', 'Novela Visual', 'Roguelike', 'Metroidvania', 'Soulslike', 'Mundo Abierto'];
+            $genres = ['RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash', 'Estrategia', 'Tactico','Online', "Beat Em Up",  'Aventura Grafica', 'MOBA','Simulación', 'Puzzle', 'Idle', 'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox', 'Plataformas', 'MMO', 'Novela Visual', 'Roguelike', 'Metroidvania', 'Soulslike', 'Mundo Abierto'];
 
             return view('admin.videogames.edit', compact('videoGame', 'genres', 'platform'));
         } catch (\Exception $e) {
