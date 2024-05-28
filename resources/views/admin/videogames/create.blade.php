@@ -146,8 +146,8 @@
                     <label for="tactico" class="form-check-label">Tactico</label>
                     <input type="checkbox" id="online" name="genres[]" value="Online" class="form-check-input">
                     <label for="online" class="form-check-label">Online</label>
-                    <input type="checkbox" id="beat'em'up" name="genres[]" value="Beat'Em Up" class="form-check-input">
-                    <label for="beat'em'up" class="form-check-label">Beat 'Em Up</label>
+                    <input type="checkbox" id="beat em up" name="genres[]" value="Beat Em Up" class="form-check-input">
+                    <label for="beat em up" class="form-check-label">Beat Em Up</label>
                     <input type="checkbox" id="beat'em'up" name="genres[]" value="Aventura Grafica" class="form-check-input">
                     <label for="rpg" class="form-check-label">Aventura Grafica</label>
                     <input type="checkbox" id="moba" name="genres[]" value="MOBA" class="form-check-input">
