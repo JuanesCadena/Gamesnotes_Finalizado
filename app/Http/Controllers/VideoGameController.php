@@ -50,8 +50,8 @@ class VideoGameController extends Controller
         $availableGenres = [
             'RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash',  'Estrategia',  'Tactico',
             'Online', "Beat Em Up",'MOBA', 'Simulación', 'Puzzle', 'Idle',
-            'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox',
-            'Musical', 'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
+            'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox', 
+            'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
         ];
 
         return view('pages.video_games.list', compact('videoGames', 'availablePlatforms', 'years', 'availableGenres'));
