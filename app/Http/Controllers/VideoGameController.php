@@ -48,10 +48,10 @@ class VideoGameController extends Controller
         $videoGames = $videoGamesQuery->get();
         $availablePlatforms = ['steam', 'nintendo_switch', 'playstation_5', 'xbox_series'];
         $availableGenres = [
-            'RPG', 'Acción', 'Aventura', 'Estrategia', 'Simulación', 'Puzzle',
+            'RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash',  'Estrategia',  'Tactico',
+            'Online', "Beat'Em Up",'MOBA', 'Simulación', 'Puzzle', 'Idle',
             'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox',
-            'Musical', 'Plataformas', 'MMO', 'Educativo', 'Fiesta', 'Arcade',
-            'Novela Visual', 'Roguelike'
+            'Musical', 'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
         ];
 
         return view('pages.video_games.list', compact('videoGames', 'availablePlatforms', 'years', 'availableGenres'));
@@ -167,10 +167,10 @@ class VideoGameController extends Controller
 
         //obtener todos los generos disponibles
         $availableGenres = [
-            'RPG', 'Acción', 'Aventura', 'Estrategia', 'Simulación', 'Puzzle',
+          'RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash',  'Estrategia',  'Tactico',
+            'Online', "Beat'Em Up",'MOBA', 'Simulación', 'Puzzle', 'Idle',
             'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox',
-            'Musical', 'Plataformas', 'MMO', 'Educativo', 'Fiesta', 'Arcade',
-            'Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
+            'Musical', 'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
         ];
 
         // Verificar si se ha seleccionado una plataforma para filtrar
