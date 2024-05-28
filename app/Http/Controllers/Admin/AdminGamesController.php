@@ -22,6 +22,7 @@ class AdminGamesController extends Controller
             if ($search) {
                 $query->where('name', 'like', '%' . $search . '%');
             }
+                    $query->orderBy('created_at', 'desc');
 
             // Obtener todos los videojuegos sin paginación
             $videoGames = $query->get();
