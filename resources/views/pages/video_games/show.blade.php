@@ -226,7 +226,7 @@
             <div class="col-md-7"> <!-- Cambiamos el ancho de esta columna a 7 -->
                 <!-- Contenido para el elemento que ocupa el 60% -->
                 <div class="bg-blue-600 mrimg">
-                    <img src="{{ Storage::url($videoGame->cover) }}" alt="{{ $videoGame->name }}" class="img-fluid w-100 rounded-circle">
+                    <img src="{{ Storage::url($videoGame->cover) }}" alt="{{ $videoGame->name }}" class="img-fluid w-100" style="border-radius:2rem; margin-top: -1.6rem">
                 </div>
             </div>
             <div class="col-md-5 d-flex align-items-start menmar justify-content-center">
