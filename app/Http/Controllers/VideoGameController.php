@@ -170,7 +170,7 @@ class VideoGameController extends Controller
           'RPG', 'JRPG', 'Acción', 'Aventura', 'Hack & Slash',  'Estrategia',  'Tactico',
             'Online', "Beat'Em Up",'MOBA', 'Simulación', 'Puzzle', 'Idle',
             'Deporte', 'Carreras', 'Lucha', 'Terror', 'Shooter', 'Sandbox',
-            'Musical', 'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
+            'Plataformas', 'MMO','Novela Visual', 'Roguelike','Metroidvania', 'Soulslike', 'Mundo Abierto'
         ];
 
         // Verificar si se ha seleccionado una plataforma para filtrar
