@@ -21,7 +21,7 @@ class AdminUsersController extends Controller
                 if (!empty($search)) {
                     $query->where('name', 'like', '%'.$search.'%');
                 }
-            })->get(); // Cambio a get() para obtener todos los usuarios sin paginación
+            })->orderBy('created_at', 'desc')->get(); // Cambio a get() para obtener todos los usuarios sin paginación
 
             // Devolver la vista del panel de administrador con los usuarios
             return view('admin.users.index', ['users' => $users]);
