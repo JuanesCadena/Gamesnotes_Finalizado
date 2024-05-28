@@ -20,6 +20,8 @@ class AdminCommentsController extends Controller
                     $query->where('name', 'like', "%$search%");
                 });
             }
+                    $commentsQuery->orderBy('created_at', 'desc');
+
 
             // Obtener todos los comentarios sin paginación
             $comments = $commentsQuery->get();
